@@ -1,0 +1,41 @@
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+
+:root {
+
+  /* palette */
+  --bot-bar-color: #282828;
+  --main-bg: #141922;
+  /* text colors */
+  --main-text-color: white;
+  --secondary-text-color: #a3a3a3;
+  /* active border */
+  --active-border-color: #92d02b;
+
+}
+
+.debug {
+  background-color: rgba(0, 0, 255, 0.2);
+  border: 1px solid black;
+  min-height: 50px;
+}
+
+
+/* main wrapper */
+
+.main-wrapper {
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+/* bot-bar */
+.bot-bar {
+  height: 80px;
+}
