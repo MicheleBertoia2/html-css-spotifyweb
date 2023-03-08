@@ -152,6 +152,11 @@ h4 {
   padding: 10px 5px 10px 0;
 }
 
+.sidenav .playlist-menu .crea-playlist:hover {
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
 .sidenav .playlist-menu .list {
   max-height: 230px;
   overflow: scroll;
@@ -249,9 +254,48 @@ h4 {
   text-transform: uppercase;
 }
 
+.main-content .categories ul li a:hover {
+  color: var(--main-text-color);
+}
+
+.main-content .image {
+  position: relative;
+}
+
+.main-content .image .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+
+.main-content .image .overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   font-size: 3rem;
+   cursor: pointer;
+   color: var(--main-text-color);
+}
+
+.main-content .image:hover .overlay {
+  display: block;
+}
+
+.main-content .popular .image {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 /* bot-bar */
 .bot-bar {
   height: 90px;
+  background-color: var(--bot-bar-color);
 }
 
 /* RESPONSIVE AREA */
