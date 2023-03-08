@@ -184,11 +184,20 @@ h4 {
   margin: 0 5px;
   padding: 5px 0;
   border-bottom: 1px solid var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.sidenav .cta:hover {
+  color: var(--main-text-color);
 }
 
 .sidenav .cta .icon {
   height: 1rem;
   width: 1rem;
+}
+
+.sidenav .user {
+  cursor: pointer;
 }
 
 .sidenav .user img {
@@ -325,6 +334,11 @@ h4 {
 .player-left .image {
   width: 50px;
   margin: 0 15px;
+  cursor: pointer;
+}
+
+.player-left .text {
+  cursor: pointer;
 }
 
 .player-left h4 {
@@ -415,6 +429,7 @@ h4 {
 .controls i {
   color: var(--main-text-color);
   margin-right: 15px;
+  cursor: pointer;
 }
 
 /* RESPONSIVE AREA */
