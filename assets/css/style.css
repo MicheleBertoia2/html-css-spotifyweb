@@ -204,6 +204,7 @@ h4 {
   position: relative;
   width: calc(100% - 230px);
   overflow-y: auto;
+  background-color: var(--main-bg);
 }
 
 .main .top-bar {
@@ -235,7 +236,6 @@ h4 {
 
 .main .main-content {
   padding-top: 80px;
-  background-color: var(--main-bg);
 }
 
 .main-content .categories {
@@ -294,8 +294,106 @@ h4 {
 
 /* bot-bar */
 .bot-bar {
+  justify-content: space-between;
+  align-items: center;
   height: 90px;
   background-color: var(--bot-bar-color);
+}
+/* 
+.bot-bar>div {
+  height: 100%;
+} */
+
+.player-left {
+  width: 230px;
+  align-items: center;
+}
+
+.player-left .image {
+  width: 50px;
+  margin: 0 15px;
+}
+
+.player-left h4 {
+  color: var(--main-text-color);
+}
+
+.player-left i {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.central-player {
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.central-player .player-btns {
+  justify-content: center;
+  align-items: center;
+}
+
+.central-player .player-btns i {
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.central-player i:nth-child(3) {
+  font-size: 1.8rem;
+}
+
+.central-player .song-timer {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-player .song-timer span {
+  font-size: .6rem;
+}
+
+.slidebar {
+  background-color: var(--secondary-text-color);
+  width: 60%;
+  margin: 10px 20px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.slidebar .bar {
+  position: relative;
+  height: 5px;
+  width: 20%;
+  border-radius: 2px;
+  background-color: var(--main-text-color);
+}
+
+.slidebar .bar .ball {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: -2px 0   lightgray;
+  display: none;
+}
+
+.slidebar:hover .bar {
+  background-color: var(--active-border-color);
+}
+
+.slidebar:hover .bar .ball {
+  display: block;
+}
+
+.controls {
+  width: 230px;
 }
 
 /* RESPONSIVE AREA */
